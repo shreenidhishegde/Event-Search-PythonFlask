@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/static/event.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type ="text/javascript" src="/static/myscript.js"> </script>
+</head>
+<body>
+<div id = "top">
+<h1 id = "heading"> Events Search </h1>
+<hr id="hrTag">
+
+<form id ="formTest">
+  &nbsp &nbsp <label for="keyword" ><b>Keyword:</b></label>
+  <input type="text" id="keyword" style="width:226px;" name="keyword" required><br>
+  &nbsp &nbsp <label for="category" class="spacing"><b>Category</b></label>
+  <select name="category" id="category" class="spacing" required>
+    <option value="default"  id="default_button" selected >Default</option>
+    <option value="music" >music</option>
+    <option value="sports">sports</option>
+    <option value="arts">Arts & Theatre</option>
+    <option value="film">Film</option>
+    <option value="miscellaneous"> Miscellaneous </option> <br>
+  </select> <br>
+  &nbsp &nbsp <label for="distance" class="spacing" ><b>Distance (miles)</b></label>
+  <input class="spacing" type="text" pattern = "[0-9]*" id="distance" name="distance" placeholder="10">
+<label class="spacing"> <b>from </b></label>
+<input class="spacing" type="radio" id="here" name="here" value="Here" checked="checked" onclick="enable()">
+<label for="here" class="spacing">Here</label><br> &nbsp &nbsp &nbsp &nbsp
+<input class="spacing" type="radio" id="loc" name="here" value="Here" onclick="enable()"> 
+<input class="spacing" type="text" id="location" name="location" placeholder="location" required disabled ><br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <button class="spacing" onclick = "geoLocation()" type="submit" id = "search" value="submit" disabled>Search</button>
+<button class="spacing" onclick = "clear_it()" type="button">Clear</button>
+</form>
+</div>
+<div id = "nothing" hidden>
+</div>
+<hr id="noHr" style="width: 1200px;margin: auto;margin-top: 10px;color:lightgrey;" hidden>
+<div id="events_list">
+</div>
+<div id = "event_details" hidden>
+  <div id ="center">
+  </div>
+</div>
+</body>
+</html>

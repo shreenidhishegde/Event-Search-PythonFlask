@@ -1,0 +1,96 @@
+a{
+	text-decoration:none;
+	color:#000000;
+}
+.spacing{
+	margin-top: 7px;
+}
+#top{
+			width:700px;
+			height: 250px;
+			margin:auto;
+			border-style : groove;
+			border-color: #E8E8E8;
+			background-color: #F2F2F2;
+		}
+
+#heading{
+			text-align: center;
+	        font-family : "Times New Roman";
+	        font-style:italic;
+	        font-weight:normal;
+	        margin-top: -1px;
+}
+
+#hrTag{
+	        color: #F2F2F2;
+	        margin-top: -10px;
+	        width: 700px;
+}
+
+
+
+#loc{
+			margin-left:300px;
+		}
+table,		
+th,
+td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-family : "Times New Roman";
+      }
+ #nothing{
+ 	margin:auto;
+ 	text-align: center;
+ 	margin-top: 20px;
+ 	background-color: #F0F0F0;
+ 	width : 1000px;
+ 	height: 45px;
+ 	
+ }
+ #nothing_p
+ {
+ 	padding:12px;
+ 	font-family: "Times New Roman";
+ }
+ #events_list
+ {
+ 	margin :auto;
+ 	width: 1400px;
+ 	margin-left: 5%;
+ 	margin-right: 5%;
+ 	align-items: center;
+ 	margin-top: 40px;
+ }
+
+ #event_details
+ {
+ 	margin: auto;
+ 	width : max-content;
+ 	height: 350px;
+ }
+ #details{
+ 	margin-top:-12px;
+ }
+ #left{
+	width:max-content;
+	float:left;
+}
+ #leftNo{
+	width:50%;
+	margin: auto;
+}
+#right{
+
+	float:right;
+	align-items: center;
+	margin-top:50px;
+		
+}
+#center
+{
+	text-align: center;
+	padding-top: 20px;
+}
